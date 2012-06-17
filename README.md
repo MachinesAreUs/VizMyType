@@ -1,16 +1,15 @@
 Welcome!
 
 
-VizMyType is a tool for visualizing your type's internal structure and dependencies.
-It's inspired by what Michael Feathers called 'Feature Diagrams' in
-his landmark book [Working Effectively with Legacy Code](http://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052).
+VizMyType is a tool for visualizing your type's internal structure and dependencies from a given set of .Net assemblies.
+It's inspired by what Michael Feathers called 'Feature Diagrams' in his landmark book [Working Effectively with Legacy Code](http://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052).
 
 ![SimpleClass](./VizMyType/raw/master/VizMyType.Tests/out/SimpleClass.png)
 
 Since there's [another kind of software diagrams](http://en.wikipedia.org/wiki/Feature_model) wich hold the name "Feature Diagrams" and my 
 thought is that it is much more appropiate for them, I'll call the former: Dependency Structure Diagrams.
 
-Basically, a dependency structure diagram is a graph depicting the dependencies between methods and attributes from a set of classes or types.
+Basically, a Dependency Structure Diagram is a graph depicting the dependencies between methods and fields from a set of classes or types.
 They are very usefull for exploring the internals of a system, specially legacy ones.
 
 For example, the above diagram was generated from this class:

@@ -149,7 +149,7 @@ namespace ZenSoft.Tools.VizMyTypes
             return type.Methods
                 .Where(method => method.HasBody)
                 .GroupBy(m => m.Name)
-                .Select(g => g.First()) // Esto es mientras se toma solo el nombre del método
+                .Select(g => g.First()) // This is while I'm using solely the method's name, not the full signature
                 .ToList();
         }
         

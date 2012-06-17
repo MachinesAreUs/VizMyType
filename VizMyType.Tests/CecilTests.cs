@@ -20,10 +20,7 @@ namespace VizMyType.Tests
                 .Types.Where(t => t.Name == "SimpleClassUsingLinq").First();
             var method = type.Methods.Where(m => m.Name == "ProjectOverStaticMethod").First();
 
-            method.Body.Instructions.ToList().ForEach( i =>
-            {
-                Console.WriteLine(i.OpCode + ",\t" + i.Operand);
-            });
+            method.Body.Instructions.ToList().ForEach( i => Console.WriteLine(i.OpCode + ",\t" + i.Operand));
         }
 
     }
