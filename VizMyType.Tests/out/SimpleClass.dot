@@ -1,0 +1,25 @@
+digraph G {
+	rankdir=LR;
+	subgraph cluster_0 {
+		fontsize=24; color="blue"
+		label="VizMyType.Test.Examples.SimpleClass";
+		"System.Int32 VizMyType.Test.Examples.SimpleClass::_publicField" [label="_publicField",shape=record,style=filled,fillcolor="#D4FFD4"];
+		"System.Int32 VizMyType.Test.Examples.SimpleClass::_protectedField" [label="_protectedField",shape=record,style=filled,fillcolor=lightblue];
+		"System.Int32 VizMyType.Test.Examples.SimpleClass::_privateField" [label="_privateField",shape=record,style=filled,fillcolor=cornflowerblue];
+		"System.Int32 VizMyType.Test.Examples.SimpleClass::_staticPrivateField" [label="_staticPrivateField",shape=record,style=filled,fillcolor=cornflowerblue];
+		"System.Void VizMyType.Test.Examples.SimpleClass::.ctor()" [label=".ctor",shape=oval,style=filled,fillcolor="#D4FFD4"];
+		"System.Void VizMyType.Test.Examples.SimpleClass::.ctor()" -> "System.Int32 VizMyType.Test.Examples.SimpleClass::_publicField";
+		"System.Void VizMyType.Test.Examples.SimpleClass::.ctor()" -> "System.Int32 VizMyType.Test.Examples.SimpleClass::_privateField";
+		"System.Void VizMyType.Test.Examples.SimpleClass::.ctor()" -> "System.Int32 VizMyType.Test.Examples.SimpleClass::_protectedField";
+		"System.Void VizMyType.Test.Examples.SimpleClass::PublicMethod()" [label="PublicMethod",shape=oval,style=filled,fillcolor="#D4FFD4"];
+		"System.Void VizMyType.Test.Examples.SimpleClass::PublicMethod()" -> "System.Int32 VizMyType.Test.Examples.SimpleClass::_privateField";
+		"System.Void VizMyType.Test.Examples.SimpleClass::PublicMethod()" -> "System.Void VizMyType.Test.Examples.SimpleClass::PrivateMethod()";
+		"System.Void VizMyType.Test.Examples.SimpleClass::ProtectedMethod()" [label="ProtectedMethod",shape=oval,style=filled,fillcolor=lightblue];
+		"System.Void VizMyType.Test.Examples.SimpleClass::ProtectedMethod()" -> "System.Int32 VizMyType.Test.Examples.SimpleClass::_protectedField";
+		"System.Void VizMyType.Test.Examples.SimpleClass::ProtectedMethod()" -> "System.Void VizMyType.Test.Examples.SimpleClass::PrivateMethod()";
+		"System.Void VizMyType.Test.Examples.SimpleClass::PrivateMethod()" [label="PrivateMethod",shape=oval,style=filled,fillcolor=cornflowerblue];
+		"System.Void VizMyType.Test.Examples.SimpleClass::PrivateMethod()" -> "System.Int32 VizMyType.Test.Examples.SimpleClass::_privateField";
+		"System.Int32 VizMyType.Test.Examples.SimpleClass::PublicStaticMethod(System.Int32)" [label="PublicStaticMethod",shape=oval,style=filled,fillcolor="#D4FFD4"];
+		"System.Int32 VizMyType.Test.Examples.SimpleClass::PublicStaticMethod(System.Int32)" -> "System.Int32 VizMyType.Test.Examples.SimpleClass::_staticPrivateField";
+	}
+}
