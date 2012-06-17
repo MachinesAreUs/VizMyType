@@ -24,7 +24,7 @@ For example, the above diagram was generated from this class:
 
         public SimpleClass()
         {
-            _publicField = _privateField = 0;
+            _publicField = _protectedField = _privateField = 0;
         }
 
         public void PublicMethod()
