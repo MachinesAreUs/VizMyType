@@ -14,7 +14,6 @@ namespace ZenSoft.Tools.VizMyTypes
 
         #region Syntactic sugar
 
-
         private TypeGraphExplorer(string assemby)
         {
             _assemblies = new string[] { assemby };
@@ -65,6 +64,7 @@ namespace ZenSoft.Tools.VizMyTypes
         {
             return DumpAssemblyGraph( _assemblies, _typeFilter, _graphBuilder);
         }
+
         #endregion
 
         #region Real work is here!
