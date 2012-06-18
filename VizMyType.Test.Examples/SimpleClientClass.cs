@@ -5,7 +5,7 @@ using System.Text;
 
 namespace VizMyType.Test.Examples
 {
-    class SimpleClientClass
+    public class SimpleClientClass
     {
         public void accessOtherTypesPublicMethod()
         {

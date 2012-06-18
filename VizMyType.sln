@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VizMyType", "VizMyType\VizMyType.csproj", "{397C5EF1-09F0-4A17-948C-27299CA0ED74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VizMyType.Tests", "VizMyType.Tests\VizMyType.Tests.csproj", "{944E23FC-E712-417F-857B-E1730675BE2A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VizMyType.Test", "VizMyType.Tests\VizMyType.Test.csproj", "{944E23FC-E712-417F-857B-E1730675BE2A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VizMyType.Test.Examples", "VizMyType.Test.Examples\VizMyType.Test.Examples.csproj", "{769989F2-279E-4C89-917B-8B7F5076EC8E}"
 EndProject

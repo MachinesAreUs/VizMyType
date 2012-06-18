@@ -5,7 +5,7 @@ using System.Text;
 
 namespace VizMyType.Test.Examples
 {
-    class SimpleClass
+    public class SimpleClass
     {
         public int _publicField;
         protected int _protectedField;
@@ -38,6 +38,12 @@ namespace VizMyType.Test.Examples
         public static int PublicStaticMethod(int i)
         {
             return (_staticPrivateField += i);
+        }
+
+        public void PublicMethodUsingTwoOtherMethods()
+        {
+            PrivateMethod();
+            ProtectedMethod();
         }
     }
 }

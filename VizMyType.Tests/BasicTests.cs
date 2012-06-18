@@ -19,7 +19,7 @@ namespace VizMyType.Tests
             var graphStr = (string)TypeGraphExplorer
                 .FromAssembly(ExamplesAssembly)
                 .WithTypeFilter(name => name == "VizMyType.Test.Examples.SimpleClass")
-                .UsingBuilder(new StringDotGraphBuilder())
+                .UsingBuilder(new DotDependencyStructureGraphBuilder())
                 .BuildGraph();
 
             Console.WriteLine(graphStr);
@@ -32,7 +32,7 @@ namespace VizMyType.Tests
             var graphStr = (string)TypeGraphExplorer
                 .FromAssembly(ExamplesAssembly)
                 .WithTypeFilter(name => true)
-                .UsingBuilder(new StringDotGraphBuilder())
+                .UsingBuilder(new DotDependencyStructureGraphBuilder())
                 .BuildGraph();
 
             Console.WriteLine(graphStr);
@@ -46,11 +46,11 @@ namespace VizMyType.Tests
                 .FromAssembly(ExamplesAssembly)
                 //.WithTypeFilter(x => x == "VizMyType.Test.Examples.SimpleClassUsingLinq")
                 .WithTypeFilter(x => true)
-                .UsingBuilder(new StringDotGraphBuilder())
+                .UsingBuilder(new DotDependencyStructureGraphBuilder())
                 .BuildGraph();
 
             Console.WriteLine(graphStr);
-            File.WriteAllText(@"..\..\out\SimpleClassWithLambdas.dot", graphStr);
+            File.WriteAllText(@"..\..\out\Test.Examples.dot", graphStr);
         }
     }
 }

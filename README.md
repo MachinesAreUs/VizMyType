@@ -56,4 +56,4 @@ and it was done with something as simple as
                      .UsingBuilder(new GraphVizBuilder("SimpleClass.png"))
                      .BuildGraph();
 					 
-Want to know more? Checkout the [wiki](https://github.com/MachinesAreUs/VizMyType/wiki)!
+Want to know more? Check out the [wiki](https://github.com/MachinesAreUs/VizMyType/wiki)!

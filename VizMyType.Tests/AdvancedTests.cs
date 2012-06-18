@@ -17,7 +17,7 @@ namespace VizMyType.Tests
             var graphStr = (string)TypeGraphExplorer
                 .FromAssembly(@"..\..\..\VizMyType\bin\Debug\VizMyType.dll")
                 .WithTypeFilter(name => true)
-                .UsingBuilder(new StringDotGraphBuilder())
+                .UsingBuilder(new DotDependencyStructureGraphBuilder())
                 .BuildGraph();
 
             Console.WriteLine(graphStr);

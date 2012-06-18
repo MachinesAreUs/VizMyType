@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Mono.Cecil;
 using NUnit.Framework;
+using VizMyType.ZenSoft.Tools.VizMyType;
 
 namespace VizMyType.Tests
 {
@@ -18,10 +19,9 @@ namespace VizMyType.Tests
             var type = 
                 ModuleDefinition.ReadModule(ExamplesAssembly)
                 .Types.Where(t => t.Name == "SimpleClassUsingLinq").First();
-            var method = type.Methods.Where(m => m.Name == "ProjectOverStaticMethod").First();
+            var method = type.Methods.Where(m => m.Name == "ProjectionOverLocalMethod").First();
 
-            method.Body.Instructions.ToList().ForEach( i => Console.WriteLine(i.OpCode + ",\t" + i.Operand));
+            Utils.DumpCILInstructionsFor(method);
         }
-
     }
 }
