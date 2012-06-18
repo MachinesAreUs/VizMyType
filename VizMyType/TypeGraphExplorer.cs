@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using VizMyType;
 using VizMyType.ZenSoft.Tools.VizMyType;
 
 namespace ZenSoft.Tools.VizMyTypes

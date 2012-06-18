@@ -2,8 +2,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using Mono.Cecil;
+using ZenSoft.Tools.VizMyTypes;
 
-namespace ZenSoft.Tools.VizMyTypes
+namespace VizMyType
 {
     public class DotDependencyStructureGraphBuilder : IDependencyStructureGraphBuilder
     {

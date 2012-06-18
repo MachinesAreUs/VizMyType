@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using Mono.Cecil;
 using Mono.Cecil.Cil;
 using ZenSoft.Tools.VizMyTypes;
 
-namespace VizMyType.ZenSoft.Tools.VizMyType
+namespace VizMyType
 {
     public class DependencyStructureExplorer
     {

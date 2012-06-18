@@ -56,12 +56,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ZenSoft\Tools\VizMyType\DependencyStructureExplorer.cs" />
-    <Compile Include="ZenSoft\Tools\VizMyType\TypeGraphExplorer.cs" />
     <Compile Include="AssemblyInfo.cs" />
-    <Compile Include="ZenSoft\Tools\VizMyType\IDependencyStructureGraphBuilder.cs" />
-    <Compile Include="ZenSoft\Tools\VizMyType\DotDependencyStructureGraphBuilder.cs" />
-    <Compile Include="ZenSoft\Tools\VizMyType\Utils.cs" />
+    <Compile Include="DependencyStructureExplorer.cs" />
+    <Compile Include="DotDependencyStructureGraphBuilder.cs" />
+    <Compile Include="IDependencyStructureGraphBuilder.cs" />
+    <Compile Include="TypeGraphExplorer.cs" />
+    <Compile Include="Utils.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
