@@ -59,6 +59,7 @@
     <Compile Include="AssemblyInfo.cs" />
     <Compile Include="DependencyStructureExplorer.cs" />
     <Compile Include="DotDependencyStructureGraphBuilder.cs" />
+    <Compile Include="GraphVizBuilder.cs" />
     <Compile Include="IDependencyStructureGraphBuilder.cs" />
     <Compile Include="TypeExplorer.cs" />
     <Compile Include="Utils.cs" />

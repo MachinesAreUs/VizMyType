@@ -12,14 +12,14 @@ namespace VizMyType
 
         void AddMethod(MethodDefinition method);
 
-        void AddFieldReference(MethodDefinition method, FieldReference attr);
+        void AddFieldReference(MethodDefinition method, FieldReference field);
 
         void AddExternalFieldReference(MethodDefinition method, FieldReference attr);
+
+        void AddMethodReference(MethodReference from, MethodReference to);
 
         void EndGraph();
 
         object BuildGraph();
-
-        void AddMethodReference(MethodReference from, MethodReference to);
     }
 }

@@ -78,9 +78,9 @@ namespace VizMyType
             _writer.WriteLine(Ident(2) + "\"" + method.FullName + "\" " + FormatMethod(method) + ";");
         }
 
-        public void AddFieldReference(MethodDefinition method, FieldReference attr)
+        public void AddFieldReference(MethodDefinition method, FieldReference field)
         {
-            _writer.WriteLine(Ident(2) + "\"" + method.FullName + "\" -> \"" + attr.FullName + "\";");
+            _writer.WriteLine(Ident(2) + "\"" + method.FullName + "\" -> \"" + field.FullName + "\";");
         }
 
         public void AddMethodReference(MethodReference from, MethodReference to)

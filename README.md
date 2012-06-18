@@ -4,7 +4,7 @@ VizMyType is a tool for visualizing your type's internal structure and dependenc
 
 It's inspired by what Michael Feathers called 'Feature Diagrams' in his landmark book [Working Effectively with Legacy Code](http://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052).
 
-![SimpleClass](./VizMyType/raw/master/VizMyType.Tests/out/SimpleClass.png)
+![SimpleClass](./VizMyType/raw/master/VizMyType.Test/out/SimpleClass.png)
 
 Since there's [another kind of software diagrams](http://en.wikipedia.org/wiki/Feature_model) wich hold the name "Feature Diagrams" and my 
 thought is that it is much more appropiate for them, I'll call the former: Dependency Structure Diagrams.
