@@ -4,7 +4,6 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using NUnit.Framework;
-using ZenSoft.Tools.VizMyTypes;
 
 namespace VizMyType.Tests
 {
@@ -16,7 +15,7 @@ namespace VizMyType.Tests
         [Test()]
         public void TestClassA()
         {
-            var graphStr = (string)TypeGraphExplorer
+            var graphStr = (string)TypeExplorer
                 .FromAssembly(ExamplesAssembly)
                 .WithTypeFilter(name => name == "VizMyType.Test.Examples.SimpleClass")
                 .UsingBuilder(new DotDependencyStructureGraphBuilder())
@@ -29,7 +28,7 @@ namespace VizMyType.Tests
         [Test()]
         public void TestClasses_AB()
         {
-            var graphStr = (string)TypeGraphExplorer
+            var graphStr = (string)TypeExplorer
                 .FromAssembly(ExamplesAssembly)
                 .WithTypeFilter(name => true)
                 .UsingBuilder(new DotDependencyStructureGraphBuilder())
@@ -42,7 +41,7 @@ namespace VizMyType.Tests
         [Test()]
         public void TestClassesWithLambdas()
         {
-            var graphStr = (string)TypeGraphExplorer
+            var graphStr = (string)TypeExplorer
                 .FromAssembly(ExamplesAssembly)
                 //.WithTypeFilter(x => x == "VizMyType.Test.Examples.SimpleClassUsingLinq")
                 .WithTypeFilter(x => true)

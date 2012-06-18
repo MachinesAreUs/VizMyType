@@ -1,37 +1,35 @@
 using System;
 using System.Collections.Generic;
-using VizMyType;
-using VizMyType.ZenSoft.Tools.VizMyType;
 
-namespace ZenSoft.Tools.VizMyTypes
+namespace VizMyType
 {
-    public class TypeGraphExplorer
+    public class TypeExplorer
     {
         private readonly string[] _assemblies;
         private Func<String, bool> _typeFilter;
         private IDependencyStructureGraphBuilder _dependencyStructureGraphBuilder;
 
-        private TypeGraphExplorer(string assemby)
+        private TypeExplorer(string assemby)
         {
             _assemblies = new string[] { assemby };
         }
 
-        private TypeGraphExplorer(string[] assemblies)
+        private TypeExplorer(string[] assemblies)
         {
             _assemblies = assemblies;
         }
 
-        public static TypeGraphExplorer FromAssembly(string assemby)
+        public static TypeExplorer FromAssembly(string assemby)
         {
-            return new TypeGraphExplorer(assemby);
+            return new TypeExplorer(assemby);
         }
 
-        public static TypeGraphExplorer FromAssemblies(string[] assemblies)
+        public static TypeExplorer FromAssemblies(string[] assemblies)
         {
-            return new TypeGraphExplorer(assemblies);
+            return new TypeExplorer(assemblies);
         }
 
-        public TypeGraphExplorer WithTypeFilter(Func<String, bool> typeFilter)
+        public TypeExplorer WithTypeFilter(Func<String, bool> typeFilter)
         {
             _typeFilter = CompositeTypeFilter(typeFilter);
             return this;
@@ -51,7 +49,7 @@ namespace ZenSoft.Tools.VizMyTypes
             }.Exists(name.StartsWith);
         }
 
-        public TypeGraphExplorer UsingBuilder(IDependencyStructureGraphBuilder dependencyStructureGraphBuilder)
+        public TypeExplorer UsingBuilder(IDependencyStructureGraphBuilder dependencyStructureGraphBuilder)
         {
             _dependencyStructureGraphBuilder = dependencyStructureGraphBuilder;
             return this;

@@ -4,7 +4,6 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using NUnit.Framework;
-using ZenSoft.Tools.VizMyTypes;
 
 namespace VizMyType.Tests
 {
@@ -14,7 +13,7 @@ namespace VizMyType.Tests
         [Test()]
         public void TestVizMyTypeDLL()
         {
-            var graphStr = (string)TypeGraphExplorer
+            var graphStr = (string)TypeExplorer
                 .FromAssembly(@"..\..\..\VizMyType\bin\Debug\VizMyType.dll")
                 .WithTypeFilter(name => true)
                 .UsingBuilder(new DotDependencyStructureGraphBuilder())
