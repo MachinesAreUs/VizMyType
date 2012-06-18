@@ -1,6 +1,7 @@
 ## Welcome!
 
 VizMyType is a tool for visualizing your type's internal structure and dependencies from a given set of .Net assemblies.
+
 It's inspired by what Michael Feathers called 'Feature Diagrams' in his landmark book [Working Effectively with Legacy Code](http://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052).
 
 ![SimpleClass](./VizMyType/raw/master/VizMyType.Tests/out/SimpleClass.png)
