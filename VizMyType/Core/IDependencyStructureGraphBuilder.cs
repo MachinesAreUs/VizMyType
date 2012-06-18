@@ -1,6 +1,6 @@
 using Mono.Cecil;
 
-namespace VizMyType
+namespace VizMyType.Core
 {
     public interface IDependencyStructureGraphBuilder
     {

@@ -1,12 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using System.Text;
 using Mono.Cecil;
+using VizMyType.Core;
 
-namespace VizMyType
+namespace VizMyType.Builders
 {
     public class GraphVizBuilder : IDependencyStructureGraphBuilder
     {

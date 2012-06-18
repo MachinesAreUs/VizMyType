@@ -57,12 +57,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
-    <Compile Include="DependencyStructureExplorer.cs" />
-    <Compile Include="DotDependencyStructureGraphBuilder.cs" />
-    <Compile Include="GraphVizBuilder.cs" />
-    <Compile Include="IDependencyStructureGraphBuilder.cs" />
-    <Compile Include="TypeExplorer.cs" />
-    <Compile Include="Utils.cs" />
+    <Compile Include="Builders\DotDependencyStructureGraphBuilder.cs" />
+    <Compile Include="Builders\GraphVizBuilder.cs" />
+    <Compile Include="Core\DependencyStructureExplorer.cs" />
+    <Compile Include="Core\IDependencyStructureGraphBuilder.cs" />
+    <Compile Include="Core\TypeExplorer.cs" />
+    <Compile Include="Util\Utils.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

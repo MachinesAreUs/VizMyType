@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using Mono.Cecil;
 using NUnit.Framework;
-using VizMyType.ZenSoft.Tools.VizMyType;
+
+using VizMyType.Util;
 
 namespace VizMyType.Tests
 {

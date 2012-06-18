@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace VizMyType
+namespace VizMyType.Core
 {
     public class TypeExplorer
     {

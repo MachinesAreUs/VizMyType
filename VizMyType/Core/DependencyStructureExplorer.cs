@@ -4,7 +4,7 @@ using System.Linq;
 using Mono.Cecil;
 using Mono.Cecil.Cil;
 
-namespace VizMyType
+namespace VizMyType.Core
 {
     public class DependencyStructureExplorer
     {

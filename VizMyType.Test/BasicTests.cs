@@ -4,6 +4,8 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using NUnit.Framework;
+using VizMyType.Builders;
+using VizMyType.Core;
 
 namespace VizMyType.Tests
 {

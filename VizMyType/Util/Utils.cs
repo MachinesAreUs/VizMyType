@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using Mono.Cecil;
 
-namespace VizMyType.ZenSoft.Tools.VizMyType
+namespace VizMyType.Util
 {
     public class Utils
     {
