@@ -9,7 +9,7 @@ using VizMyType.ZenSoft.Tools.VizMyType;
 
 namespace VizMyType.Tests
 {
-    [TestFixture()]
+    [TestFixture]
     class DependencyStructureExplorerTests
     {
         private const String ExamplesAssembly = @"..\..\..\VizMyType.Test.Examples\bin\Debug\VizMyType.Test.Examples.dll";
@@ -25,7 +25,7 @@ namespace VizMyType.Tests
             Assert.AreEqual("PrivateMethod", usedMethods.First().Name);
         }
 
-        [Test()]
+        [Test]
         public void TestFindMethodsUsedBy_TwoReferencedLocalMethods()
         {
             var method = GetMethodReference(typeof(SimpleClass).FullName, "PublicMethodUsingTwoOtherMethods");
@@ -37,7 +37,7 @@ namespace VizMyType.Tests
             Assert.That(usedMethods.Any(m => m.Name == "ProtectedMethod"));
         }
 
-        [Test()]
+        [Test]
         public void TestFindMethodsUsedBy_OneLocalMethodAsLambda()
         {
             var method = GetMethodReference(typeof(SimpleClassUsingLinq).FullName, "ProjectionOverLocalMethod");

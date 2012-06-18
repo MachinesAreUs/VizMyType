@@ -7,25 +7,21 @@ using NUnit.Framework;
 
 namespace VizMyType.Tests
 {
-    [TestFixture()]
+    [TestFixture]
     class AdvancedTests
     {
-        [Test()]
+        [Test]
         public void TestVizMyTypeDLL()
         {
+            const string outputFileName = @"..\..\out\VizMyType.png";
+
             var graphStr = (string)TypeExplorer
                 .FromAssembly(@"..\..\..\VizMyType\bin\Debug\VizMyType.dll")
                 .WithTypeFilter(name => true)
-                .UsingBuilder(new DotDependencyStructureGraphBuilder())
+                .UsingBuilder(new GraphVizBuilder(outputFileName))
                 .BuildGraph();
 
-            Console.WriteLine(graphStr);
-            File.WriteAllText(@"..\..\out\VizMyType.dot", graphStr);
-        }
-
-        private static Func<string, bool> NullTypeFilter()
-        {
-            return name => true;
+            Assert.AreEqual(outputFileName, graphStr);
         }
     }
 }

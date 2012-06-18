@@ -8,7 +8,7 @@ using VizMyType.ZenSoft.Tools.VizMyType;
 
 namespace VizMyType.Tests
 {
-    [TestFixture()]
+    [TestFixture]
     class CecilTests
     {
         private const String ExamplesAssembly = @"..\..\..\VizMyType.Test.Examples\bin\Debug\VizMyType.Test.Examples.dll";

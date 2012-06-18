@@ -7,7 +7,7 @@ using NUnit.Framework;
 
 namespace VizMyType.Tests
 {
-    [TestFixture()]
+    [TestFixture]
     class BasicTests
     {
         private const String ExamplesAssembly = @"..\..\..\VizMyType.Test.Examples\bin\Debug\VizMyType.Test.Examples.dll";
@@ -25,7 +25,7 @@ namespace VizMyType.Tests
             File.WriteAllText(@"..\..\out\SimpleClass.dot", graphStr);
         }
 
-        [Test()]
+        [Test]
         public void TestClasses_AB()
         {
             var graphStr = (string)TypeExplorer
@@ -38,7 +38,7 @@ namespace VizMyType.Tests
             File.WriteAllText(@"..\..\out\SimpleClassWithClient.dot", graphStr);
         }
 
-        [Test()]
+        [Test]
         public void TestClassesWithLambdas()
         {
             var graphStr = (string)TypeExplorer
