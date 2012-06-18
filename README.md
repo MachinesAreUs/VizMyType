@@ -50,9 +50,9 @@ For example, the above diagram was generated from this class:
 
 and it was done with something as simple as
 
-    TypeGraphExplorer.FromAssembly("MyAssembly")
-                     .WithTypeFilter(name => name == "VizMyType.Test.Examples.SimpleClass")
-                     .UsingBuilder(new GraphVizBuilder("SimpleClass.png"))
-                     .BuildGraph();
+    TypeExplorer.FromAssembly("MyAssembly")
+                .WithTypeFilter(name => name == "VizMyType.Test.Examples.SimpleClass")
+                .UsingBuilder(new GraphVizBuilder("SimpleClass.png"))
+                .BuildGraph();
 					 
 Want to know more? Check out the [wiki](https://github.com/MachinesAreUs/VizMyType/wiki)!
